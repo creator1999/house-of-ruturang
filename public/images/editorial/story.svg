@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="THE HOUSE OF RUTURANG">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A98A5E" stop-opacity="0.24"/>
+      <stop offset="0.6" stop-color="#A98A5E" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#A98A5E" stop-opacity="0.14"/>
+    </linearGradient>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="23" cy="23" r="1.4" fill="#A98A5E" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="1100" fill="#FAF7F2"/>
+  <rect width="900" height="1100" fill="url(#wash)"/>
+  <rect width="900" height="1100" fill="url(#dots)"/>
+
+  <!-- soft drape curves -->
+  <path d="M0 792 C 270 682, 540 858, 900 726 L 900 1100 L 0 1100 Z" fill="#A98A5E" opacity="0.07"/>
+
+  <!-- hairline frame -->
+  <rect x="40.5" y="49.5" width="819" height="1001" fill="none" stroke="#B69A74" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- ornament -->
+  <g fill="none" stroke="#B69A74" stroke-opacity="0.5" stroke-width="2">
+    <rect x="390" y="490" width="120" height="120" transform="rotate(45 450 550)"/>
+    <circle cx="450" cy="550" r="9" fill="#B69A74" fill-opacity="0.5" stroke="none"/>
+  </g>
+
+  <text x="450" y="460" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="50" letter-spacing="6" fill="#282323">THE HOUSE OF RUTURANG</text>
+  <text x="450" y="1012" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" fill="#786D68">IMAGE COMING SOON</text>
+  <text x="450" y="1050.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" letter-spacing="8" fill="#B69A74">RUTURANG</text>
+</svg>

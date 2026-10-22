@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "chanderi-blush",
+    "name": "Blush/pink saree demo",
+    "url": "https://unsplash.com/photos/a-woman-poses-in-a-beautiful-pink-saree-OtT_sbW8RzM",
+    "provider": "Unsplash",
+    "photographer": "Avinash Narnaware",
+    "notes": "Replace with owned product photography before accepting payment"
+  },
+  {
+    "slug": "georgette-sapphire",
+    "name": "Blue saree demo",
+    "url": "https://www.pexels.com/photo/a-woman-wearing-saree-7589447/",
+    "provider": "Pexels",
+    "photographer": "Ankush Dawar",
+    "notes": "Replace with owned product photography before accepting payment"
+  },
+  {
+    "slug": "handloom-indigo",
+    "name": "Purple/indigo saree demo",
+    "url": "https://unsplash.com/photos/woman-in-purple-and-gold-sari-bskf4Jh9hY0",
+    "provider": "Unsplash",
+    "photographer": "Sabesh Photography LTD",
+    "notes": "Purple/gold sari image; mark DEMO and do not claim specific fabric. Replace with own photos before real checkout."
+  },
+  {
+    "slug": "organza-ivory",
+    "name": "White/ivory saree demo",
+    "url": "https://www.pexels.com/photo/elegant-traditional-indian-model-in-white-saree-32244572/",
+    "provider": "Pexels",
+    "photographer": "upender photography",
+    "notes": "Replace with owned product photography before accepting payment"
+  }
+]

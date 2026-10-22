@@ -1,0 +1,19 @@
+# Netlify build settings — House of Ruturang (static export).
+#
+# The storefront is fully static (mock catalog + client-side cart + WhatsApp
+# checkout), so `next build` emits plain HTML/CSS/JS into `out/`. Netlify serves
+# that directory on its CDN with no serverless functions and no Next.js runtime.
+#
+# NETLIFY_NEXT_PLUGIN_SKIP tells Netlify not to install the Next.js runtime
+# plugin for this project — we don't need SSR/API routes here.
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+# Static export already has clean URLs; leave no redirects that could race the
+# router. Add a custom domain redirect here later if you buy one.
