@@ -5,12 +5,12 @@ import { collections } from "@/lib/products";
 
 export function Collections() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mb-10 max-w-xl">
+    <section className="mx-auto max-w-7xl px-5 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div className="mb-8 max-w-xl">
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-gold">
           Curated for you
         </p>
-        <h2 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">
+        <h2 className="mt-3 font-heading text-[28px] font-semibold text-balance sm:text-4xl">
           Discover Your Shade of Elegance
         </h2>
         <p className="mt-3 text-muted-foreground">
@@ -19,7 +19,7 @@ export function Collections() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-6">
         {collections.map((collection) => (
           <Link
             key={collection.id}

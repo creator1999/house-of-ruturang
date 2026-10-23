@@ -51,7 +51,7 @@ export function ProductDetail({
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8">
       {/* Breadcrumb */}
       <nav
         aria-label="Breadcrumb"
@@ -212,7 +212,7 @@ export function ProductDetail({
           <div className="grid grid-cols-3 gap-3 text-center text-xs text-muted-foreground">
             <div className="flex flex-col items-center gap-1.5 rounded-lg border border-border p-3">
               <Truck className="size-5 text-gold" />
-              <span>Free shipping over ₹1,999</span>
+              <span>Ships across India</span>
             </div>
             <div className="flex flex-col items-center gap-1.5 rounded-lg border border-border p-3">
               <Banknote className="size-5 text-gold" />
@@ -253,8 +253,7 @@ export function ProductDetail({
               <AccordionTrigger>Shipping &amp; returns</AccordionTrigger>
               <AccordionContent>
                 <p className="text-muted-foreground">
-                  Dispatched within 2–3 business days. Free shipping across
-                  India on orders over ₹1,999, otherwise a flat ₹99 fee. See our{" "}
+                  Dispatched within 2–3 business days across India. See our{" "}
                   <Link
                     href="/policies/shipping"
                     className="underline underline-offset-2 hover:text-foreground"

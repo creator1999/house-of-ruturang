@@ -19,23 +19,25 @@ export function QuantityStepper({
       <Button
         type="button"
         variant="ghost"
-        size="icon-sm"
+        size="icon"
+        className="size-11"
         onClick={() => onChange(Math.max(min, value - 1))}
         disabled={value <= min}
         aria-label="Decrease quantity"
       >
-        <Minus />
+        <Minus className="size-4" />
       </Button>
-      <span className="w-9 text-center text-sm tabular-nums">{value}</span>
+      <span className="w-10 text-center text-sm tabular-nums">{value}</span>
       <Button
         type="button"
         variant="ghost"
-        size="icon-sm"
+        size="icon"
+        className="size-11"
         onClick={() => onChange(Math.min(max, value + 1))}
         disabled={value >= max}
         aria-label="Increase quantity"
       >
-        <Plus />
+        <Plus className="size-4" />
       </Button>
     </div>
   );

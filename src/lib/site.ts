@@ -5,6 +5,7 @@
 
 export const site = {
   name: "House of Ruturang",
+  shortName: "Ruturang",
   brandLine: "House of Ruturang by Rutuja",
   tagline: "Elegance in Every Shade",
   description:

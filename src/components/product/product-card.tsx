@@ -61,9 +61,9 @@ export function ProductCard({
             type="button"
             onClick={quickAdd}
             aria-label={`Add ${product.name} to bag`}
-            className="absolute bottom-3 right-3 flex size-9 items-center justify-center rounded-full bg-surface text-primary shadow-sm ring-1 ring-border transition-colors hover:bg-primary hover:text-primary-foreground"
+            className="absolute bottom-3 right-3 flex size-11 items-center justify-center rounded-full bg-surface text-primary shadow-sm ring-1 ring-border transition-colors hover:bg-primary hover:text-primary-foreground"
           >
-            <Plus className="size-4" />
+            <Plus className="size-5" />
           </button>
         )}
       </div>

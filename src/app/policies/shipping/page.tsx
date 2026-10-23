@@ -24,8 +24,8 @@ export default function ShippingPage() {
           Shipping charges
         </h2>
         <p className="mt-2 leading-relaxed">
-          Shipping is complimentary across India on orders over ₹1,999. For
-          orders below that, a flat ₹99 fee applies.
+          Shipping charges and delivery timelines are being finalised. Please
+          reach out on WhatsApp for current delivery details.
         </p>
       </section>
 

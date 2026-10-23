@@ -8,10 +8,7 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 import { QuantityStepper } from "@/components/cart/quantity-stepper";
 import { useCart } from "@/components/cart/cart-provider";
 import { formatINR } from "@/lib/format";
-import {
-  computeShipping,
-  FREE_SHIPPING_THRESHOLD,
-} from "@/lib/shipping";
+import { computeShipping } from "@/lib/shipping";
 import { cn } from "@/lib/utils";
 
 export function CartView() {
@@ -42,7 +39,7 @@ export function CartView() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="font-heading text-4xl font-semibold">Your Bag</h1>
+      <h1 className="font-heading text-3xl font-semibold sm:text-4xl">Your Bag</h1>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         {/* Items */}
@@ -78,9 +75,9 @@ export function CartView() {
                   <button
                     onClick={() => removeItem(line.productId)}
                     aria-label={`Remove ${line.product.name}`}
-                    className="text-muted-foreground transition-colors hover:text-destructive"
+                    className="-mr-3 -mt-3 p-3 text-muted-foreground transition-colors hover:text-destructive"
                   >
-                    <Trash2 className="size-4" />
+                    <Trash2 className="size-5" />
                   </button>
                 </div>
                 <div className="mt-auto flex items-center justify-between pt-4">
@@ -109,12 +106,6 @@ export function CartView() {
               <span className="text-muted-foreground">Shipping</span>
               <span>{shipping === 0 ? "Free" : formatINR(shipping)}</span>
             </div>
-            {shipping > 0 && (
-              <p className="text-xs text-muted-foreground">
-                Add {formatINR(FREE_SHIPPING_THRESHOLD - subtotal)} more for
-                free shipping.
-              </p>
-            )}
             <Separator />
             <div className="flex justify-between text-base font-semibold">
               <span>Total</span>

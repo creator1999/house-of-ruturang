@@ -32,54 +32,60 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40">
-      {/* Announcement bar */}
-      <div className="bg-primary px-4 py-2 text-center text-[11px] tracking-wide text-primary-foreground">
-        Complimentary shipping across India on orders over ₹1,999
+      {/* Announcement bar — brand tagline only, no unverified offers */}
+      <div className="bg-primary px-4 py-2 text-center text-[11px] tracking-[0.14em] text-primary-foreground">
+        Elegance in Every Shade
       </div>
 
       <div className="border-b border-border bg-surface/85 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Top row */}
-          <div className="relative flex h-16 items-center justify-between">
-            <div className="flex flex-1 items-center">
+          {/* Top row — three-column grid so the wordmark stays centred no matter
+              how wide the left/right icon groups are */}
+          <div className="grid h-[72px] grid-cols-[1fr_auto_1fr] items-center gap-2">
+            {/* Left — menu (mobile only) */}
+            <div className="flex items-center justify-start">
               <Button
                 variant="ghost"
                 size="icon"
-                className="-ml-2 lg:hidden"
+                className="-ml-2 size-11 lg:hidden"
                 aria-label="Open menu"
                 onClick={() => setMobileOpen(true)}
               >
-                <Menu />
+                <Menu className="size-5" />
               </Button>
             </div>
 
+            {/* Centre — wordmark */}
             <Link
               href="/"
-              className="absolute left-1/2 flex -translate-x-1/2 flex-col items-center leading-none"
+              className="flex flex-col items-center justify-center text-center leading-none"
             >
-              <span className="font-heading text-xl font-semibold tracking-[0.1em] sm:text-2xl lg:text-3xl">
-                {site.name}
+              <span className="whitespace-nowrap font-heading text-lg font-semibold tracking-[0.06em] sm:text-xl lg:text-3xl lg:tracking-[0.1em]">
+                <span className="lg:hidden">{site.shortName}</span>
+                <span className="hidden lg:inline">{site.name}</span>
               </span>
-              <span className="mt-1.5 text-[9px] uppercase tracking-[0.42em] text-gold">
+              <span className="mt-1.5 text-[9px] uppercase tracking-[0.32em] text-gold sm:text-[10px] sm:tracking-[0.42em]">
                 By Rutuja
               </span>
             </Link>
 
-            <div className="flex flex-1 items-center justify-end gap-0.5">
+            {/* Right — search + WhatsApp + bag */}
+            <div className="flex items-center justify-end gap-0.5">
               <Button
                 variant="ghost"
                 size="icon"
+                className="size-11"
                 aria-label="Search"
                 onClick={() => setSearchOpen(true)}
               >
-                <Search />
+                <Search className="size-5" />
               </Button>
               <a
                 href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"
-                className="hidden size-8 items-center justify-center rounded-lg text-foreground/80 transition-colors hover:bg-muted hover:text-foreground sm:inline-flex"
+                className="hidden size-11 items-center justify-center rounded-lg text-foreground/80 transition-colors hover:bg-muted hover:text-foreground sm:inline-flex"
               >
                 <WhatsAppIcon className="size-5" />
               </a>
@@ -88,11 +94,11 @@ export function Navbar() {
                 size="icon"
                 aria-label="Open bag"
                 onClick={() => setCartOpen(true)}
-                className="relative"
+                className="relative size-11"
               >
-                <ShoppingBag />
+                <ShoppingBag className="size-5" />
                 {count > 0 && (
-                  <span className="absolute -right-0.5 -top-0.5 flex size-4.5 items-center justify-center rounded-full bg-gold text-[10px] font-semibold text-gold-foreground">
+                  <span className="absolute right-1 top-1 flex size-4.5 items-center justify-center rounded-full bg-gold text-[10px] font-semibold text-gold-foreground">
                     {count}
                   </span>
                 )}

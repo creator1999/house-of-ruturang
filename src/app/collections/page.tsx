@@ -19,12 +19,12 @@ export default function CollectionsPage() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8">
       <div className="mb-10 max-w-xl">
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-gold">
           The edit
         </p>
-        <h1 className="mt-2 font-heading text-4xl font-semibold sm:text-5xl">
+        <h1 className="mt-2 font-heading text-[32px] font-semibold sm:text-5xl">
           Collections
         </h1>
         <p className="mt-3 text-muted-foreground">
@@ -33,7 +33,7 @@ export default function CollectionsPage() {
         </p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         {collections.map((collection) => (
           <Link
             key={collection.id}

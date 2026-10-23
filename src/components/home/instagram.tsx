@@ -14,12 +14,12 @@ const shots = [
 
 export function InstagramFeed() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mb-8 text-center">
+    <section className="mx-auto max-w-7xl px-5 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div className="mb-6 text-center">
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-gold">
           Follow Our Journey
         </p>
-        <h2 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">
+        <h2 className="mt-3 font-heading text-[28px] font-semibold text-balance sm:text-4xl">
           Behind the weave
         </h2>
         <a
